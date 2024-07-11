@@ -165,7 +165,7 @@ nav a {
 }
 
 .ubicacion-container p {
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 6px;
     text-align: center;
 }
@@ -218,6 +218,6 @@ nav a {
     }
 
     .ubicacion-container p {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
