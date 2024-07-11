@@ -226,7 +226,7 @@ nav a {
         background-size: cover;
         background-attachment: fixed;
         width: 100vw;
-        height: 767px;
+        height: 300px;
         position: relative;
     }
 }
