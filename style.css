@@ -137,7 +137,7 @@ nav a {
 .bienvenidohijo p {
     color: #878484;
     padding-bottom: 8px;
-    font-size: 20px;
+    font-size: 17px;
     padding-left: 20px;
 }
 
@@ -146,7 +146,7 @@ nav a {
     color: #26a3aa;
     padding-bottom: 10px;
     padding-left: 20px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .localizacao {
@@ -166,7 +166,7 @@ nav a {
 }
 
 .ubicacion-container p {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 6px;
     text-align: center;
 }
@@ -219,7 +219,7 @@ nav a {
     }
 
     .ubicacion-container p {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .ContainerHeader {
