@@ -37,6 +37,7 @@ header {
     background-attachment: fixed;
     width: 100vw;
     height: 1000px;
+    /* Ajustar altura para telas grandes */
     position: relative;
 }
 
@@ -150,6 +151,7 @@ nav a {
     background-attachment: fixed;
     width: 100vw;
     height: 700px;
+    /* Ajustar altura para telas grandes */
     position: relative;
 }
 
@@ -169,7 +171,6 @@ nav a {
     padding: 10px 0px 10px 8px;
     color: white;
     font-size: 16px;
-
 }
 
 .buttons-reserva {
@@ -186,7 +187,6 @@ nav a {
     padding: 14px 50px;
     border-radius: 6px;
     transition: background-color 0.3s, transform 0.3s;
-
 }
 
 .buttons-reserva .carta1:hover {
@@ -203,12 +203,10 @@ nav a {
     padding: 14px 50px;
     border-radius: 6px;
     transition: background-color 0.3s, transform 0.3s;
-
 }
 
 .buttons-reserva .reserva2:hover {
     background-color: #105c5c;
-
     transform: scale(1.1);
 }
 
@@ -216,12 +214,10 @@ nav a {
     margin-right: 0;
 }
 
-
 @media (max-width: 767px) {
     .localizacao {
         flex-direction: column;
         align-items: center;
-
     }
 
     .ubicacion-container {
@@ -236,5 +232,38 @@ nav a {
 
     .ubicacion-container p {
         font-size: 16px;
+    }
+
+    .ContainerHeader {
+        background: url(imagens/43ae9040-e621-4b27-a778-6bf654f2b5fc.JPG) no-repeat center center;
+        background-size: cover;
+        background-attachment: scroll;
+        /* Mudar para scroll para que o background não fique fixo em telas pequenas */
+        height: 400px;
+        /* Ajustar altura para telas menores */
+    }
+
+    .reserva {
+        background: url(imagens/vistaaomar.JPG) no-repeat center center;
+        background-size: cover;
+        background-attachment: scroll;
+        /* Mudar para scroll para que o background não fique fixo em telas pequenas */
+        height: 400px;
+        /* Ajustar altura para telas menores */
+    }
+
+    .bienvenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bienvenidohijo p {
+        padding-left: 0;
+        /* Remover o padding esquerdo para melhorar a leitura em telas pequenas */
+    }
+
+    .bienvenidohijo h3 {
+        padding-left: 0;
+        /* Remover o padding esquerdo para melhorar a leitura em telas pequenas */
     }
 }
