@@ -35,22 +35,11 @@ header {
     z-index: 1000;
 }
 
-<<<<<<< HEAD
-.ContainerHeader {
-    background: url(imagens/43ae9040-e621-4b27-a778-6bf654f2b5fc.JPG) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 800px;
-    position: relative;
-}
-=======
 .show-menu {
     position: fixed;
     top: 0;
     left: -110%;
     z-index: 1002;
->>>>>>> 84d48cdf741a0e994d14d9133689a46103afbe99
 
     display: flex;
     overflow: hidden;
@@ -76,8 +65,6 @@ header {
     margin-top: 60px;
 }
 
-<<<<<<< HEAD
-=======
 .show-menu .icon-top div {
     display: flex;
     align-items: center;
@@ -142,7 +129,6 @@ nav a {
     text-decoration: none;
 }
 
->>>>>>> 84d48cdf741a0e994d14d9133689a46103afbe99
 .bienvenido {
     display: flex;
     text-align: left;
@@ -325,7 +311,7 @@ nav a {
         background: url(imagens/43ae9040-e621-4b27-a778-6bf654f2b5fc.JPG) no-repeat center center;
         background-size: cover;
         background-attachment: scroll;
-        /* Mudar para scroll para que o background não fique fixo em telas pequenas */
+        /* Mudar para scroll para que o background nÃ£o fique fixo em telas pequenas */
         height: 400px;
         /* Ajustar altura para telas menores */
     }
@@ -334,7 +320,7 @@ nav a {
         background: url(imagens/vistaaomar.JPG) no-repeat center center;
         background-size: cover;
         background-attachment: scroll;
-        /* Mudar para scroll para que o background não fique fixo em telas pequenas */
+        /* Mudar para scroll para que o background nÃ£o fique fixo em telas pequenas */
         height: 400px;
         /* Ajustar altura para telas menores */
     }
