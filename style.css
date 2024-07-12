@@ -105,7 +105,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 1000px;
     position: relative;
 }
 
@@ -127,63 +127,6 @@ nav img:hover {
 
 nav a {
     text-decoration: none;
-}
-
-.sobrenosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.sobrenosotros p {
-    padding: 10px;
-}
-
-.social-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 6px 8px -2px rgba(0, 0, 0, 0.48);
-    padding: 10px 20px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.social-container img {
-    width: 27px;
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-    margin: 0 10px;
-}
-
-.social-container img:hover {
-    transform: scale(1.1);
-}
-
-.social-container a {
-    text-decoration: none;
-}
-
-.reserve-button {
-    margin-left: 20px;
-    padding: 10px 20px;
-    background-color: #26a3aa;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-    text-align: center;
-}
-
-.reserve-button:hover {
-    background-color: #ff6347;
 }
 
 .bienvenido {
@@ -254,7 +197,6 @@ nav a {
     text-align: center;
     padding-right: 20px;
     font-size: 14px;
-
 }
 
 .locale1 a {
@@ -275,11 +217,80 @@ nav a {
     transform: scale(1.1);
 }
 
+.reserva {
+    margin: 3px 0 10px 0;
+    background: url(imagens/vistaaomar.JPG) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 700px;
+    /* Ajustar altura para telas grandes */
+    position: relative;
+}
+
+.texto-informe {
+    background-color: #293333;
+    padding-bottom: 120px;
+    opacity: 70%;
+}
+
+.texto-informe h3 {
+    padding: 20px 0px 10px 8px;
+    font-size: 18px;
+    color: #31d3db;
+}
+
+.texto-informe p {
+    padding: 10px 0px 10px 8px;
+    color: white;
+    font-size: 16px;
+}
+
+.buttons-reserva {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons-reserva .carta1 {
+    margin-right: 20px;
+    background-color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    color: #26a3aa;
+    padding: 14px 50px;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons-reserva .carta1:hover {
+    background-color: #000000;
+    transform: scale(1.2);
+}
+
+.buttons-reserva .reserva2 {
+    margin-right: 20px;
+    background-color: #31d3db;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 50px;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons-reserva .reserva2:hover {
+    background-color: #105c5c;
+    transform: scale(1.1);
+}
+
+.buttons-reserva .reserva2:last-child {
+    margin-right: 0;
+}
+
 @media (max-width: 767px) {
     .localizacao {
         flex-direction: column;
         align-items: center;
-
     }
 
     .ubicacion-container {
@@ -293,16 +304,43 @@ nav a {
     }
 
     .ubicacion-container p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .ContainerHeader {
         background: url(imagens/43ae9040-e621-4b27-a778-6bf654f2b5fc.JPG) no-repeat center center;
         background-size: cover;
         background-attachment: scroll;
-        /* Alterado de fixed para scroll */
-        width: 100vw;
-        height: 300px;
-        position: relative;
+        /* Mudar para scroll para que o background não fique fixo em telas pequenas */
+        height: 400px;
+        /* Ajustar altura para telas menores */
+    }
+
+    .reserva {
+        background: url(imagens/vistaaomar.JPG) no-repeat center center;
+        background-size: cover;
+        background-attachment: scroll;
+        /* Mudar para scroll para que o background não fique fixo em telas pequenas */
+        height: 400px;
+        /* Ajustar altura para telas menores */
+    }
+
+    .bienvenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bienvenidohijo p {
+        padding-left: 0;
+        /* Remover o padding esquerdo para melhorar a leitura em telas pequenas */
+    }
+
+    .bienvenidohijo h3 {
+        padding-left: 0;
+        /* Remover o padding esquerdo para melhorar a leitura em telas pequenas */
+    }
+
+    .buttons-reserva {
+        margin-top: 25px;
     }
 }
