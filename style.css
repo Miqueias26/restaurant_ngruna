@@ -253,10 +253,10 @@ nav a {
 
 .buttons-reserva .carta1 {
     margin-right: 20px;
-    background-color: #ffffff;
+    background-color: #de5451;
     font-size: 16px;
     text-decoration: none;
-    color: #26a3aa;
+    color: #ffffff;
     padding: 14px 50px;
     border-radius: 6px;
     transition: background-color 0.3s, transform 0.3s;
