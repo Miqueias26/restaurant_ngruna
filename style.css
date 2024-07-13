@@ -412,6 +412,32 @@ nav a {
 }
 
 
+/* Estilos generales para el widget */
+.sk-ww-google-reviews {
+    max-width: 100%;
+    /* Asegura que el widget no se desborde del contenedor */
+    margin: 0 auto;
+    /* Centra el widget horizontalmente */
+}
+
+/* Estilos para pantallas de tabletas (≤ 768px) */
+@media (max-width: 768px) {
+    .sk-ww-google-reviews {
+        margin-top: 50px;
+        /* Ajusta el margen superior para tabletas */
+        /* Puedes añadir más ajustes si es necesario */
+    }
+}
+
+/* Estilos para pantallas de móviles (≤ 480px) */
+@media (max-width: 480px) {
+    .sk-ww-google-reviews {
+        margin-top: 30px;
+        /* Ajusta el margen superior para móviles */
+        /* Puedes añadir más ajustes si es necesario */
+    }
+}
+
 @media (max-width: 767px) {
     .localizacao {
         flex-direction: column;
@@ -470,6 +496,7 @@ nav a {
     }
 
     .sk-ww-google-reviews {
+
         margin-top: 80px;
         /* Margem superior menor para tablets */
     }
