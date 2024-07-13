@@ -6,66 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>N´gruna</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>N’gruna</title>
 </head>
 
 <body>
-
     <!-- MENU DE NAVEGAÇÃO-->
     <div class="show-menu">
         <div class="icon-top">
-            <div onclick="closeMenu()"><img class="close-menu" src="/imagens/close.png" alt=""></div>
+            <div onclick="closeMenu()"><img class="close-menu" src="imagens/close.png" alt="Fechar Menu"></div>
         </div>
 
         <ul>
-            <li><a href="">Reserva</a></li>
-            <li><a href="">Carta</a></li>
-            <li><a href="">Localização</a></li>
-            <li><a href="">Sobre Nosotros</a></li>
+            <li><a href="#">Reserva</a></li>
+            <li><a href="#">Carta</a></li>
+            <li><a href="#">Localización</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
         </ul>
     </div>
 
     <div class="ContainerHeader">
         <header>
-            <img src="imagens/llogo.png" alt="Logo de N'gruna" />
+            <img src="imagens/llogo.png" alt="Logo de N'gruna">
             <nav>
-                <button href="#">
-                    <img class="menu" src="imagens/menusmart.png" alt="Menu" onclick="openMenu()" />
-                </button>
+                <a href="#">
+                    <img class="menu" src="imagens/menusmart.png" alt="Menu" onclick="openMenu()">
+                </a>
             </nav>
         </header>
     </div>
+
     <section class="bienvenido">
-        <video muted loop autoplay width="600px">
-            <source src="video/flame-2 (video-converter.com).mp4" type="video/mp4">
-            <source src="video/flame-2.webm (video-converter.com).webm" type="video/webm">
-            <source src="video/flame-2 (video-convertercom).mov (video-converter.com).mov" type="video/mov">
+        <video muted loop autoplay>
+            <source src="video/flame-2.mp4" type="video/mp4">
+            <source src="video/flame-2.webm" type="video/webm">
+            <source src="video/flame-2.mov" type="video/mov">
             Video flame
         </video>
         <div class="bienvenidohijo">
             <p>Bienvenido a</p>
             <h3>N'GRUNA</h3>
             <p>Un auténtico tesoro de la cocina mediterránea desde 1997.</p>
-            <p>Aquí celebramos los sabores vibrantes y
-                auténticos de la región mediterránea, combinando tradición e innovación en cada plato.</p>
+            <p>Aquí celebramos los sabores vibrantes y auténticos de la región mediterránea, combinando tradición e
+                innovación en cada plato.</p>
             <p>Nuestra dedicación a la calidad y a la hospitalidad garantiza una experiencia gastronómica inolvidable,
                 donde cada comida es preparada con pasión y ingredientes frescos. Ven a visitarnos.</p>
-
         </div>
     </section>
 
-
     <section class="localizacao">
+        <h2>Ubicación</h2>
         <div class="ubicacion-container">
-            <strong>
-                <p>Ubicación</p>
-            </strong>
             <p>Passeig Molinet, 5, 17258 L'Estartit, Girona</p>
         </div>
         <div class="locale1">
-            <a href="#">
-                <img src="imagens/maps.png" alt="maps">
+            <a href="https://www.google.com/maps/place/Passeig+Molinet,+5,+17258+L'Estartit,+Girona" target="_blank"
+                aria-label="Ver en Google Maps">
+                <img src="imagens/maps.png" alt="Maps">
                 <p><i>Haga clic en la imagen para obtener la ubicación.</i></p>
             </a>
         </div>
@@ -73,20 +71,60 @@
 
     <main class="reserva">
         <section class="texto-informe">
-            <h3>Nosotros</h3>
+            <h2>Nosotros</h2>
             <p>Cocina Mediterránea | Vista al Mar</p>
             <p>El restaurante Ngruna ofrece una experiencia única con su impresionante vista al mar y una fusión de
                 sabores mediterráneos. Su ambiente acogedor y su atención al detalle lo convierten en el lugar perfecto
                 para una comida memorable junto al océano.</p>
         </section>
         <section class="buttons-reserva">
+
             <a class="carta1" href="#">Carta</a>
             <a class="reserva2" href="#">Reserva</a>
         </section>
     </main>
 
 
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4>N’gruna</h4>
+                <p>Dirección: Passeig Molinet, 5 - 17258 L'Estartit, Girona</p>
+            </div>
+            <div class="footer-hours">
+                <h4>Horario de Atención</h4>
+                <ul>
+                    <li>Martes a Domingo: 13:00 - 02:00</li>
+                    <li>Cocina: 13:00 - 15:30 | 20:00 - 23:00</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Útiles</h4>
+                <ul>
+                    <li><a href="/aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="/politica-de-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="/politica-de-cookies.html">Política de Cookies</a></li>
+                    <li><a href="/declaracion-de-accesibilidad.html">Declaración de Accesibilidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociales</h4>
+                <a href="https://www.instagram.com/ngrunarestaurante" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/ngrunarestaurante" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 N’gruna Restaurante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
