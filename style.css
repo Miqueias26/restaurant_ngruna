@@ -15,6 +15,43 @@ body {
     overflow-x: hidden;
 }
 
+#cookieConsent {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: none;
+    /* Inicialmente oculto */
+}
+
+.cookie-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cookie-message p {
+    margin: 0;
+}
+
+.cookie-message button {
+    background-color: #2abcad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.cookie-message button:hover {
+    background-color: #275d51;
+}
+
 
 header img {
     width: 175px;
