@@ -327,6 +327,9 @@ nav a {
     margin-right: 0;
 }
 
+.sk-ww-google-reviews {
+    margin-top: 10px;
+}
 
 .footer {
     background-color: rgba(230, 230, 230, 0.8);
@@ -463,7 +466,12 @@ nav a {
     }
 
     .buttons-reserva {
-        margin-top: 25px;
+        margin-top: 40px;
+    }
+
+    .sk-ww-google-reviews {
+        margin-top: 80px;
+        /* Margem superior menor para tablets */
     }
 
 
