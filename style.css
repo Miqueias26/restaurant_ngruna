@@ -15,6 +15,43 @@ body {
     overflow-x: hidden;
 }
 
+#cookieConsent {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: none;
+    /* Inicialmente oculto */
+}
+
+.cookie-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cookie-message p {
+    margin: 0;
+}
+
+.cookie-message button {
+    background-color: #2abcad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.cookie-message button:hover {
+    background-color: #275d51;
+}
+
 
 header img {
     width: 175px;
@@ -89,6 +126,7 @@ header {
     color: #fff;
     font-size: 26px;
     font-weight: 500;
+
 }
 
 .show-menu ul li:hover {
@@ -114,6 +152,31 @@ button {
     border: none;
     background: transparent;
 }
+
+
+.idiomasicon {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.idiomasicon img {
+    width: 22px;
+    border: solid white 2px;
+    border-radius: 50%;
+    box-shadow: #26a3aa;
+    transition: transform 0.3s ease;
+
+}
+
+.idiomasicon img:hover {
+
+    transform: scale(1.2);
+
+}
+
+
 
 nav img {
     width: 27px;
@@ -144,6 +207,7 @@ nav a {
     border: 1px solid white;
     border-radius: 2px;
     text-align: center;
+    width: 600px;
 }
 
 @media (max-width: 767px) {
@@ -250,6 +314,7 @@ nav a {
 .buttons-reserva {
     text-align: center;
     margin-top: 20px;
+
 }
 
 .buttons-reserva .carta1 {
@@ -286,6 +351,117 @@ nav a {
 
 .buttons-reserva .reserva2:last-child {
     margin-right: 0;
+}
+
+.sk-ww-google-reviews {
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: rgba(230, 230, 230, 0.8);
+    color: #000000;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-info,
+.footer-hours,
+.footer-links,
+.footer-social {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-info h4,
+.footer-hours h4,
+.footer-links h4,
+.footer-social h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-hours ul,
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-hours ul li,
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #000000;
+    font-size: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos generales para el widget */
+.sk-ww-google-reviews {
+    max-width: 100%;
+    /* Asegura que el widget no se desborde del contenedor */
+    margin: 0 auto;
+    /* Centra el widget horizontalmente */
+}
+
+/* Estilos para pantallas de tabletas (≤ 768px) */
+@media (max-width: 768px) {
+    .sk-ww-google-reviews {
+        margin-top: 50px;
+        /* Ajusta el margen superior para tabletas */
+        /* Puedes añadir más ajustes si es necesario */
+    }
+}
+
+/* Estilos para pantallas de móviles (≤ 480px) */
+@media (max-width: 480px) {
+    .sk-ww-google-reviews {
+        margin-top: 30px;
+        /* Ajusta el margen superior para móviles */
+        /* Puedes añadir más ajustes si es necesario */
+    }
 }
 
 @media (max-width: 767px) {
@@ -342,6 +518,163 @@ nav a {
     }
 
     .buttons-reserva {
-        margin-top: 25px;
+        margin-top: 40px;
+    }
+
+    .sk-ww-google-reviews {
+
+        margin-top: 80px;
+        /* Margem superior menor para tablets */
+    }
+
+
+
+
+}
+
+@media (max-width: 767px) {
+    .footer {
+
+        margin-top: 70px;
+        background-color: rgba(230, 230, 230, 0.8);
+        /* Cor de fundo do footer */
+        padding: 20px;
+        /* Espaçamento interno */
+        text-align: center;
+        /* Centraliza o texto */
+        font-size: 14px;
+        /* Tamanho da fonte */
+        color: #000000;
+    }
+
+    /* Conteúdo do footer */
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        /* Empilha os itens verticalmente */
+        align-items: center;
+        /* Alinha os itens ao centro */
+    }
+
+    .footer-info,
+    .footer-hours,
+    .footer-links {
+        margin-bottom: 20px;
+        color: rgb(42, 43, 43);
+        /* Espaçamento entre seções */
+    }
+
+    .footer-info p,
+    .footer-hours ul,
+    .footer-links ul {
+        margin: 0;
+        padding: 0;
+        color: rgb(42, 43, 43);
+    }
+
+    .footer-hours ul,
+    .footer-links ul {
+        list-style: none;
+        /* Remove os marcadores da lista */
+        padding: 0;
+    }
+
+    .footer-hours li,
+    .footer-links li {
+        color: rgb(42, 43, 43);
+        margin-bottom: 10px;
+        /* Espaçamento entre itens da lista */
+    }
+
+    .footer a {
+        color: #000000;
+    }
+
+    .footer-hours a,
+    .footer-links a {
+        color: #000000;
+        /* Cor dos links */
+        text-decoration: none;
+        /* Remove o sublinhado dos links */
+    }
+
+    .footer-hours a:hover,
+    .footer-links a:hover {
+        color: #2f9e8f;
+        /* Cor dos links ao passar o mouse */
+        text-decoration: underline;
+        /* Sublinha o link ao passar o mouse */
+    }
+
+    /* Estilo para os ícones de redes sociais */
+    .footer-social {
+        margin-top: 20px;
+        /* Espaçamento superior */
+    }
+
+    .footer-social h4 {
+        margin-bottom: 10px;
+        /* Espaçamento inferior */
+    }
+
+    .footer-social a {
+        color: #000000;
+        margin: 0 10px;
+        /* Espaçamento entre os ícones */
+        display: inline-block;
+        /* Faz os ícones ficarem lado a lado */
+    }
+
+    .footer-social i {
+        font-size: 24px;
+        /* Tamanho dos ícones de redes sociais */
+        color: #000000;
+        /* Cor dos ícones, ajustada para branco */
+    }
+
+    /* Remove o efeito hover dos ícones */
+    .footer-social a:hover i {
+        color: #2cc6b4;
+        /* Mantém a cor branca dos ícones ao passar o mouse */
+    }
+
+    /* Se você tiver uma classe para uma newsletter ou campo de assinatura */
+    .newsletter {
+        margin-top: 20px;
+        /* Espaçamento superior */
+    }
+
+
+    .newsletter button {
+        width: 100%;
+        /* Faz o botão ocupar toda a largura disponível */
+        padding: 10px;
+        /* Espaçamento interno */
+        background-color: #007bff;
+        /* Cor de fundo do botão */
+        color: #000000;
+        /* Cor do texto do botão */
+        border: none;
+        /* Remove a borda padrão do botão */
+        border-radius: 5px;
+        /* Cantos arredondados */
+        font-size: 16px;
+        /* Tamanho da fonte do botão */
+    }
+
+    .newsletter button:hover {
+        background-color: #0056b3;
+        /* Cor de fundo do botão ao passar o mouse */
+    }
+
+    /* Ajusta o tamanho e o layout do footer no mobile */
+    .footer-bottom {
+        margin-top: 20px;
+        /* Espaçamento superior */
+    }
+
+    .footer-bottom p {
+        margin: 0;
+        /* Remove a margem do texto */
     }
 }
