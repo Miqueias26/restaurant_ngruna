@@ -9,6 +9,8 @@ const openMenu = () => {
 const closeMenu = () => {
     menu.style.left = "-110%"
     document.body.style.overflow = "visible";
+
+    document.body.style.overflowX = 'hidden'
 }
 
 
