@@ -15,6 +15,10 @@ body {
     overflow-x: hidden;
 }
 
+.logo {
+    width: 230px;
+}
+
 #cookieConsent {
     position: fixed;
     bottom: 0;
@@ -55,6 +59,7 @@ body {
 
 header img {
     width: 175px;
+    cursor: pointer;
 }
 
 header {
@@ -71,6 +76,8 @@ header {
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
+
+/* Menu Navegação */
 
 .show-menu {
     position: fixed;
@@ -96,9 +103,10 @@ header {
 .show-menu .icon-top {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
+
     padding: 40px 100px;
-    margin: 10px 0px 10px 90px;
+    margin-top: 60px;
 }
 
 .show-menu .icon-top div {
@@ -108,7 +116,6 @@ header {
     border: 1px solid #fff;
     border-radius: 50%;
     cursor: pointer;
-
 }
 
 .show-menu .icon-top div:hover {
@@ -119,7 +126,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    text-align: center;
 }
 
 .show-menu ul li a {
@@ -137,16 +143,157 @@ header {
     text-underline-offset: 10px;
 }
 
+/* Fim do Menu de Navegação */
 
 
-.ContainerHeader {
-    background: url(imagens/43ae9040-e621-4b27-a778-6bf654f2b5fc.JPG) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 1000px;
-    position: relative;
+/* Carrousel de Imagens */
+.container-navigation {
+    width: 100%;
+    height: 115px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2001;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2%;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
 }
+
+.container-navigation .menu {
+    font-size: 34px;
+    cursor: pointer;
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    transition: .1s ease-in-out;
+}
+
+.container-navigation .menu:hover {
+    transform: scale(1.1);
+}
+
+.container-header {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-header .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+
+
+    width: 100%;
+    height: 100%;
+}
+
+.container-header .slide input {
+    display: none;
+}
+
+.container-header .slide>div {
+    flex: 0 0 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-header .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.container-header .slide img {
+    object-fit: cover;
+    object-position: center;
+
+    width: 100%;
+    height: 100%;
+
+    filter: brightness(0.8) contrast(1.5);
+}
+
+.container-header .slide .image-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.container-header .slide .image-data .text {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.container-header .slide .image-data h2 {
+    font-size: 55px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.container-header .slide .image-data .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 25px;
+    transition: all .2s ease;
+}
+
+.container-header .slide .image-data .button:hover {
+    color: #000;
+    background: #fff;
+}
+
+.container-header .slide .slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container-header .slide .slides.active {
+    opacity: 1;
+}
+
+/* Fim do Carrousel */
 
 button {
     border: none;
@@ -162,7 +309,7 @@ button {
 }
 
 .idiomasicon img {
-    width: 24px;
+    width: 22px;
     border: solid white 2px;
     border-radius: 50%;
     box-shadow: #26a3aa;
@@ -175,6 +322,7 @@ button {
     transform: scale(1.2);
 
 }
+
 
 
 nav img {
@@ -209,16 +357,11 @@ nav a {
     width: 600px;
 }
 
-
-
 @media (max-width: 767px) {
     .bienvenido video {
         display: none;
     }
 }
-
-
-
 
 .bienvenidohijo p {
     color: #878484;
@@ -236,19 +379,15 @@ nav a {
 }
 
 .localizacao {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 14px;
-    background-color: #2c2d2ced;
-
-    color: #e7fafa;
+    padding: 20px;
+    background-color: #ececec;
+    color: rgb(120, 125, 125);
 }
-
-
 
 .ubicacion-container {
     text-align: left;
@@ -265,12 +404,8 @@ nav a {
     text-align: center;
 }
 
-.locale1 h3 {
-    color: #e7fafa;
-}
-
 .locale1 p {
-    color: #e7fafa;
+    color: #69706f;
     text-align: center;
     padding-right: 20px;
     font-size: 14px;
@@ -285,8 +420,9 @@ nav a {
 .locale1 img {
     width: 100%;
     max-width: 340px;
-    border-radius: 6px;
-
+    border-radius: 0px;
+    transition: transform 0.3s ease;
+    padding-right: 20px;
 }
 
 .locale1 img:hover {
@@ -294,7 +430,7 @@ nav a {
 }
 
 .reserva {
-    margin: 3px 0 1px 0;
+    margin: 3px 0 10px 0;
     background: url(imagens/vistaaomar.JPG) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -306,9 +442,8 @@ nav a {
 
 .texto-informe {
     background-color: #293333;
-    padding-bottom: 40px;
+    padding-bottom: 120px;
     opacity: 70%;
-
 }
 
 .texto-informe h3 {
@@ -327,9 +462,6 @@ nav a {
     text-align: center;
     margin-top: 20px;
 
-    opacity: none;
-
-
 }
 
 .buttons-reserva .carta1 {
@@ -341,7 +473,6 @@ nav a {
     padding: 14px 50px;
     border-radius: 6px;
     transition: background-color 0.3s, transform 0.3s;
-
 }
 
 .buttons-reserva .carta1:hover {
@@ -369,13 +500,11 @@ nav a {
     margin-right: 0;
 }
 
-
 .sk-ww-google-reviews {
     margin-top: 10px;
 }
 
 .footer {
-    margin-top: 1px;
     background-color: rgba(230, 230, 230, 0.8);
     color: #000000;
     padding: 20px;
@@ -433,12 +562,6 @@ nav a {
     margin: 0 10px;
     color: #000000;
     font-size: 24px;
-    transition: transform 0.3s ease;
-
-}
-
-.footer-social a:hover {
-    transform: scale (1.1);
 }
 
 .footer-bottom {
@@ -460,7 +583,6 @@ nav a {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
-
 
 
 /* Estilos generales para el widget */
@@ -489,9 +611,6 @@ nav a {
     }
 }
 
-
-
-
 @media (max-width: 767px) {
     .localizacao {
         flex-direction: column;
@@ -506,7 +625,6 @@ nav a {
 
     .locale1 img {
         padding-right: 0px;
-        border-radius: 6px;
     }
 
     .ubicacion-container p {
@@ -527,7 +645,7 @@ nav a {
         background-size: cover;
         background-attachment: scroll;
         /* Mudar para scroll para que o background nÃ£o fique fixo em telas pequenas */
-        height: 420px;
+        height: 400px;
         /* Ajustar altura para telas menores */
     }
 
@@ -557,16 +675,14 @@ nav a {
     }
 
 
+
+
 }
-
-
-
 
 @media (max-width: 767px) {
     .footer {
 
-        margin-top: 1px;
-
+        margin-top: 70px;
         background-color: rgba(230, 230, 230, 0.8);
         /* Cor de fundo do footer */
         padding: 20px;
@@ -653,12 +769,7 @@ nav a {
         margin: 0 10px;
         /* Espaçamento entre os ícones */
         display: inline-block;
-
         /* Faz os ícones ficarem lado a lado */
-
-        transform: scale (1.1);
-
-
     }
 
     .footer-social i {
