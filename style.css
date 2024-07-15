@@ -103,10 +103,9 @@ header {
 .show-menu .icon-top {
     width: 100%;
     display: flex;
-    justify-content: end;
-
+    justify-content: flex-end;
     padding: 40px 100px;
-    margin-top: 60px;
+    margin: 10px 0px 10px 90px;
 }
 
 .show-menu .icon-top div {
@@ -116,6 +115,7 @@ header {
     border: 1px solid #fff;
     border-radius: 50%;
     cursor: pointer;
+
 }
 
 .show-menu .icon-top div:hover {
@@ -126,6 +126,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    text-align: center;
 }
 
 .show-menu ul li a {
@@ -309,7 +310,7 @@ button {
 }
 
 .idiomasicon img {
-    width: 22px;
+    width: 24px;
     border: solid white 2px;
     border-radius: 50%;
     box-shadow: #26a3aa;
@@ -322,7 +323,6 @@ button {
     transform: scale(1.2);
 
 }
-
 
 
 nav img {
@@ -357,11 +357,17 @@ nav a {
     width: 600px;
 }
 
+
+
 @media (max-width: 767px) {
     .bienvenido video {
         display: none;
     }
+
 }
+
+
+
 
 .bienvenidohijo p {
     color: #878484;
@@ -379,15 +385,19 @@ nav a {
 }
 
 .localizacao {
-    margin-top: 30px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    background-color: #ececec;
-    color: rgb(120, 125, 125);
+    padding: 14px;
+    background-color: #2c2d2ced;
+
+    color: #e7fafa;
 }
+
+
 
 .ubicacion-container {
     text-align: left;
@@ -404,8 +414,12 @@ nav a {
     text-align: center;
 }
 
+.locale1 h3 {
+    color: #e7fafa;
+}
+
 .locale1 p {
-    color: #69706f;
+    color: #e7fafa;
     text-align: center;
     padding-right: 20px;
     font-size: 14px;
@@ -420,9 +434,8 @@ nav a {
 .locale1 img {
     width: 100%;
     max-width: 340px;
-    border-radius: 0px;
-    transition: transform 0.3s ease;
-    padding-right: 20px;
+    border-radius: 6px;
+
 }
 
 .locale1 img:hover {
@@ -430,7 +443,7 @@ nav a {
 }
 
 .reserva {
-    margin: 3px 0 10px 0;
+    margin: 3px 0 1px 0;
     background: url(imagens/vistaaomar.JPG) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -442,8 +455,9 @@ nav a {
 
 .texto-informe {
     background-color: #293333;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
     opacity: 70%;
+
 }
 
 .texto-informe h3 {
@@ -462,6 +476,9 @@ nav a {
     text-align: center;
     margin-top: 20px;
 
+    opacity: none;
+
+
 }
 
 .buttons-reserva .carta1 {
@@ -473,6 +490,7 @@ nav a {
     padding: 14px 50px;
     border-radius: 6px;
     transition: background-color 0.3s, transform 0.3s;
+
 }
 
 .buttons-reserva .carta1:hover {
@@ -500,11 +518,13 @@ nav a {
     margin-right: 0;
 }
 
+
 .sk-ww-google-reviews {
     margin-top: 10px;
 }
 
 .footer {
+    margin-top: 1px;
     background-color: rgba(230, 230, 230, 0.8);
     color: #000000;
     padding: 20px;
@@ -562,6 +582,12 @@ nav a {
     margin: 0 10px;
     color: #000000;
     font-size: 24px;
+    transition: transform 0.3s ease;
+
+}
+
+.footer-social a:hover {
+    transform: scale (1.1);
 }
 
 .footer-bottom {
@@ -583,6 +609,7 @@ nav a {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
+
 
 
 /* Estilos generales para el widget */
@@ -611,6 +638,9 @@ nav a {
     }
 }
 
+
+
+
 @media (max-width: 767px) {
     .localizacao {
         flex-direction: column;
@@ -625,6 +655,7 @@ nav a {
 
     .locale1 img {
         padding-right: 0px;
+        border-radius: 6px;
     }
 
     .ubicacion-container p {
@@ -645,7 +676,7 @@ nav a {
         background-size: cover;
         background-attachment: scroll;
         /* Mudar para scroll para que o background nÃ£o fique fixo em telas pequenas */
-        height: 400px;
+        height: 420px;
         /* Ajustar altura para telas menores */
     }
 
@@ -675,14 +706,16 @@ nav a {
     }
 
 
-
-
 }
+
+
+
 
 @media (max-width: 767px) {
     .footer {
 
-        margin-top: 70px;
+        margin-top: 1px;
+
         background-color: rgba(230, 230, 230, 0.8);
         /* Cor de fundo do footer */
         padding: 20px;
@@ -769,7 +802,12 @@ nav a {
         margin: 0 10px;
         /* Espaçamento entre os ícones */
         display: inline-block;
+
         /* Faz os ícones ficarem lado a lado */
+
+        transform: scale (1.1);
+
+
     }
 
     .footer-social i {
