@@ -39,22 +39,35 @@ let slideIndex = 0;
         slideIndex = (n + totalSlides) % totalSlides;
         slides[slideIndex].classList.add('active');
         
-        // Atualiza o radio button correspondente
-        document.getElementById('radio' + (slideIndex + 1)).checked = true;
     }
 
     function nextSlide() {
         showSlide(slideIndex + 1);
     }
-
+    
     function startSlideshow() {
         setInterval(nextSlide, 5000); // Muda o slide a cada 5 segundos
     }
+    
+    // Inicia o slideshow quando a página carrega
+    document.addEventListener('DOMContentLoaded', function() {
+        showSlide(0); // Mostra o primeiro slide
+        startSlideshow(); // Inicia o slideshow automático
+    });   
+    
 
-    // Inicia o slideshow
-    startSlideshow();
-
-    // Adiciona funcionalidade aos botões manuais
-    document.querySelectorAll('.manual-btn').forEach((btn, index) => {
-        btn.addEventListener('click', () => showSlide(index));
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.querySelector('.carrousel');
+        const leftBtn = document.getElementById('left');
+        const rightBtn = document.getElementById('right');
+        const imgWidth = carousel.querySelector('img').clientWidth;
+    
+        leftBtn.addEventListener('click', () => {
+            carousel.scrollLeft -= imgWidth;
+        });
+    
+        rightBtn.addEventListener('click', () => {
+            carousel.scrollLeft += imgWidth;
+        });
     });
+
