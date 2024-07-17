@@ -19,41 +19,50 @@ body {
     width: 230px;
 }
 
-#cookieConsent {
+/* Estilos gerais para o aviso de cookies */
+.cookie-consent {
+    display: none;
+    /* Inicialmente escondido */
     position: fixed;
     bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
     text-align: center;
-    padding: 10px;
-    display: none;
-    /* Inicialmente oculto */
 }
 
+/* Estilos para a mensagem de cookies */
 .cookie-message {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
+    gap: 10px;
 }
 
-.cookie-message p {
-    margin: 0;
+/* Estilos para o link de mais informações */
+.cookie-message a {
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
-.cookie-message button {
-    background-color: #2abcad;
-    color: white;
+/* Estilos para o botão de aceitar cookies */
+#acceptCookies {
+    background-color: #ffcc00;
+    color: #333;
     border: none;
     padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    margin-left: 10px;
+    border-radius: 5px;
 }
 
-.cookie-message button:hover {
-    background-color: #275d51;
+/* Efeito ao passar o mouse sobre o botão */
+#acceptCookies:hover {
+    background-color: #e6b800;
 }
 
 
@@ -105,7 +114,7 @@ header {
     display: flex;
     justify-content: flex-end;
     padding: 40px 100px;
-    margin: 10px 0px 10px 90px;
+    margin: 4px 0px 10px 120px;
 }
 
 .show-menu .icon-top div {
@@ -266,7 +275,7 @@ header {
 
 .container-header .slide .image-data .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: 2px solid #fff;
     border-radius: 25px;
     background: transparent;
@@ -356,8 +365,6 @@ nav a {
     text-align: center;
     width: 600px;
 }
-
-
 
 @media (max-width: 767px) {
     .bienvenido video {
@@ -454,6 +461,7 @@ nav a {
 }
 
 .texto-informe {
+    text-align: center;
     background-color: #293333;
     padding-bottom: 40px;
     opacity: 70%;
@@ -519,9 +527,7 @@ nav a {
 }
 
 
-.sk-ww-google-reviews {
-    margin-top: 10px;
-}
+
 
 .footer {
     margin-top: 1px;
@@ -615,8 +621,10 @@ nav a {
 .wrapper {
     padding: 12px 0;
     position: relative;
-    max-width: 1800px;
+    max-width: 1600px;
     margin: 0 auto;
+
+
 }
 
 .wrapper i {
@@ -651,10 +659,11 @@ nav a {
 }
 
 .wrapper .carrousel img {
-    height: 340px;
+    height: 300px;
     object-fit: cover;
     width: calc(100% / 5);
     margin-left: 14px;
+    border-radius: 8px;
 }
 
 .wrapper .carrousel img:first-child {
@@ -717,14 +726,7 @@ nav a {
         font-size: 16px;
     }
 
-    .ContainerHeader {
-        background: url(imagens/43ae9040-e621-4b27-a778-6bf654f2b5fc.JPG) no-repeat center center;
-        background-size: cover;
-        background-attachment: scroll;
-        /* Mudar para scroll para que o background nÃ£o fique fixo em telas pequenas */
-        height: 400px;
-        /* Ajustar altura para telas menores */
-    }
+
 
     .reserva {
         background: url(imagens/vistaaomar.JPG) no-repeat center center;
@@ -751,12 +753,12 @@ nav a {
     }
 
     .buttons-reserva {
-        margin-top: 40px;
+        margin-top: 18px;
     }
 
     .sk-ww-google-reviews {
 
-        margin-top: 80px;
+        margin-top: 295px;
         /* Margem superior menor para tablets */
     }
 

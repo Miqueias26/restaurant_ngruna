@@ -38,6 +38,7 @@ let slideIndex = 0;
         slides.forEach(slide => slide.classList.remove('active'));
         slideIndex = (n + totalSlides) % totalSlides;
         slides[slideIndex].classList.add('active');
+       
         
     }
 
