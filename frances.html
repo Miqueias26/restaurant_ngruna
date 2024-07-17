@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <!-- MENU DE NAVIGATION-->
     <div class="show-menu">
         <div class="icon-top">
             <div onclick="closeMenu()"><img class="close-menu" src="imagens/close.png" alt="Fermer le Menu"></div>
@@ -33,16 +32,63 @@
                     <img src="imagens2/united-kingdom.png" alt="English">
                 </a>
             </section>
-            <li><a href="#">Réservation</a></li>
+            <li><a href="tel:+872217100">Réservation</a></li>
             <li><a href="#">Carte</a></li>
             <li><a href="https://maps.app.goo.gl/BtX9UNig9yzUrmz57">Localisation</a></li>
-            <li><a href="sobre-nosotros-FA.html">À Propos</a></li>
+            <li><a href="sobre-nosotros.html">À Propos de Nous</a></li>
         </ul>
     </div>
 
+    <header class="container-header">
+        <nav class="container-navigation">
+            <div class="logo-container">
+                <a href=""><img class="logo" src="imagens/llogo.png" alt="Logo"></a>
+            </div>
+
+            <div class="menu" onclick="openMenu()"><i class='bx bx-menu'></i></div>
+        </nav>
+
+        <div class="slide">
+
+            <!-- Images du Slider -->
+            <div class="slides active">
+                <img src="imagens/vistaaomar.JPG" alt="image-carrousel" class="image">
+            </div>
+            <div class="slides">
+                <img src="imagens/2a83bb2c-0c7a-4be3-aacf-a3c4f686ed33.JPG" alt="image-carrousel" class="image">
+            </div>
+            <div class="slides">
+                <img src="imagens/background03.JPG" alt="image-carrousel" class="image">
+            </div>
+            <div class="slides">
+                <img src="imagens/f18b3a0f-99a1-4b2d-8cea-52cbb2df26ef.JPG" alt="image-carrousel" class="image">
+            </div>
+
+            <!-- Fin des Images du Slider -->
+
+            <div class="image-data">
+                <!--     <span class="text">Profitez des meilleures boissons au café</span> -->
+                <h2>Où le goût devient <br> un art.</h2>
+                <a href="tel:+34872217100" class="button">RÉSERVER</a>
+            </div>
+
+        </div>
+
+    </header>
+
     <div class="ContainerHeader">
         <header>
-            <a href="frances.html">
+            <a href="index.html">
+                <img src="imagens/llogo.png" alt="Logo de N'gruna">
+            </a>
+            <nav>
+                <img class="menu" src="imagens/menusmart.png" alt="Menu" onclick="openMenu()">
+            </nav>
+        </header>
+    </div>
+    <div class="ContainerHeader">
+        <header>
+            <a href="index.html">
                 <img src="imagens/llogo.png" alt="Logo de N'gruna">
             </a>
             <nav>
@@ -69,8 +115,7 @@
                 chaque repas est préparé avec passion et des ingrédients frais. Venez nous rendre visite.</p>
         </div>
     </section>
-    <div class='sk-ww-google-reviews' data-embed-id='25437041'></div>
-    <script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
+
 
     <main class="reserva">
         <section class="texto-informe">
@@ -80,11 +125,32 @@
                 saveurs méditerranéennes. Son ambiance accueillante et son attention aux détails en font l'endroit idéal
                 pour un repas mémorable au bord de l'océan.</p>
         </section>
+        <div class="wrapper">
+            <i id="left" class='bx bx-chevron-left'></i>
+            <div class="carrousel">
+                <img src="imagens/IMG_8579.jpg" alt="imagens">
+                <img src="imagens/tartar.jpg" alt="imagens">
+                <img src="imagens/IMG_8580.jpg" alt="imagens">
+                <img src="imagens/crema.jpg" alt="imagens">
+                <img src="imagens/IMG_8581.jpg" alt="imagens">
+                <img src="imagens/barbecue.jpg" alt="imagens">
+
+
+
+
+
+
+
+            </div>
+            <i id="right" class='bx bx-chevron-right'></i>
+        </div>
         <section class="buttons-reserva">
             <a class="carta1" href="#">Carte</a>
-            <a class="reserva2" href="#">Réservation</a>
+            <a href="tel:+34872217100" class="reserva2">Réservation</a>
         </section>
     </main>
+    <div class='sk-ww-google-reviews' data-embed-id='25437041'></div>
+    <script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
 
     <div id="cookieConsent">
         <div class="cookie-message">
@@ -109,11 +175,11 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <<footer class="footer">
         <div class="footer-content">
             <div class="footer-info">
-                <h4>N’GRUNA</h4>
-                <p>Adresse : Passeig Molinet, 5 - 17258 L'Estartit, Girona</p>
+                <h4>N’GRUNA SL, 1997 &COPY;</h4>
+
             </div>
             <div class="footer-hours">
                 <h4>Horaires d'Ouverture</h4>
@@ -143,11 +209,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 N’gruna Restaurant. Tous droits réservés.</p>
+            <p>&copy; 2024 N´GRUNA SL, 1997. Tous droits réservés.</p>
         </div>
-    </footer>
+        </footer>
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
