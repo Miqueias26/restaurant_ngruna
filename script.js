@@ -72,3 +72,24 @@ let slideIndex = 0;
         });
     });
 
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visivel');
+                    observer.unobserve(entry.target); // Stop observing the element once it becomes visible
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+    
+        // Selecione todos os elementos que devem ser animados
+        const elementosParaAnimar = document.querySelectorAll('.animar');
+    
+        // Observe cada elemento
+        elementosParaAnimar.forEach(element => {
+            observer.observe(element);
+        });
+    });
+   
