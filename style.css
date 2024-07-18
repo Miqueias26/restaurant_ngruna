@@ -45,13 +45,13 @@ body {
 
 /* Estilos para o link de mais informações */
 .cookie-message a {
-    color: #ffcc00;
+    color: #32b0aa;
     text-decoration: underline;
 }
 
 /* Estilos para o botão de aceitar cookies */
 #acceptCookies {
-    background-color: #ffcc00;
+    background-color: #2ad3b1;
     color: #333;
     border: none;
     padding: 10px 20px;
@@ -62,7 +62,7 @@ body {
 
 /* Efeito ao passar o mouse sobre o botão */
 #acceptCookies:hover {
-    background-color: #e6b800;
+    background-color: #194e41;
 }
 
 
