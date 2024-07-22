@@ -711,12 +711,14 @@ nav a {
     .localizacao {
         flex-direction: column;
         align-items: center;
+        margin-top: 294px;
     }
 
     .ubicacion-container {
         text-align: center;
         margin-bottom: 10px;
         margin-left: 1px;
+
     }
 
     .locale1 img {
@@ -737,6 +739,7 @@ nav a {
         /* Mudar para scroll para que o background nÃ£o fique fixo em telas pequenas */
         height: 420px;
         /* Ajustar altura para telas menores */
+
     }
 
     .bienvenido {
@@ -758,11 +761,7 @@ nav a {
         margin-top: 18px;
     }
 
-    .sk-ww-google-reviews {
 
-        margin-top: 295px;
-        /* Margem superior menor para tablets */
-    }
 
 
 }
